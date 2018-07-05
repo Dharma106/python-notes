@@ -14,10 +14,10 @@ def nse_equity_output():
                  "CDSL":"finance-investments/centraldepositoryservicesltd/CDS",
                  "Indian Overseas":"banks-public-sector/indianoverseasbank/IOB",
                  "Sintex Plastics":"plastics/sintexplasticstechnology/SPT"}    
+    
     equity_name = []
     price = []
-    volume =[]
-    
+    volume =[]    
     for i in range(len(stock_dict)):
         web_page = page_address + stock_dict.values()[i]
         page_sp = requests.get(web_page)
@@ -36,3 +36,6 @@ def nse_equity_output():
                'Volumes': volume}
     equity_detail_table = pd.DataFrame(data = equity_data)
     print(equity_detail_table)        
+
+    
+    
