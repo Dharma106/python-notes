@@ -79,3 +79,38 @@ After log tranformation the statistics has improved but still it is above
 implying we can't reject H0.Data still has still unit root and is non-stationary.
 
 """    
+
+#************************************************************************
+"""
+Granger Casuality test is used to investigate the casuality between the 
+variables in time series. The method is probabilistic account of casuality.
+It uses empirical data sets to find the patterns of correlation.
+
+Granger Casuality is a "bottom up" procedure, where the assumption is that the
+data-generating process in any time series are independent variables and then the 
+data sets are analyzed to see if they are correlated. 
+
+Opposite to this is "top down" method which assumes the process are not independent.
+In this the data sets are then analyzed to see if they are generated independently
+from each other.
+
+Null Hypothesis : The lagged x-values do not explain the variation in y.
+i.e. it assumes that x(t) doesn't Ganger-Cause y(t).
+
+Basic steps for running the test
+1) Form (state) the null hypothesis and alternate hypothersi.
+    e.g. y(t) does not Ganger-Cause x(t)
+2) Choose the lags, (this mostly depends on how much data is avialable.)
+    Easier way is to jus pick the several values for lag and run the Granger test
+    several times to see if the results are same for different lag values.
+    
+3) Find the f-value. euqations which can be used to if Bj = 0 for all lags j.
+    y(t) = sumover i to infity[(ai * y(t-i) + c1 + v1(t)]
+    y(t) = sum over i=1 to infinity[ai * y(t-i)] + 
+                sum over j=1 to infinity[(Bj * x(t-j) + c2 + v2(t))]
+                    
+4) Calculate the F-statistic using the 
+5) Reject Null hypothersis if F-Statistic is greter than f-calculated.   
+
+""" 
+
