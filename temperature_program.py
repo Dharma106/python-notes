@@ -2,7 +2,7 @@
 """
 Created on Sun Nov 26 23:31:43 2017
 
-@author: KumarD1
+@author: ""
 """
 
 def convert_to_celcius(fahrenheit):
