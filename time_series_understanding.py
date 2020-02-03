@@ -6,7 +6,7 @@ import numpy as np
 
 %matplotlib inline
 
-series = pd.read_csv('C:/Users/KumarD1/Documents/international-airline-passengers.csv',
+series = pd.read_csv('../../international-airline-passengers.csv',
                      usecols = ["Month", "Passengers"])
 series = series.dropna()
 series.plot(    )
