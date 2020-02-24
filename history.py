@@ -12,7 +12,7 @@ import str
 %clear
 import time_series
 import os
-os.chdir('C:\Users\\kumard1\\.spyder')
+os.chdir('.')
 import time_series
 import time_series
 
@@ -92,8 +92,8 @@ with open('hopedale2.txt', 'r') as input_file
 with open('hopedale.txt', 'r') as input_file
 import os
 os.curdir
-os.chdir("c:/Users/kumard1/.spyder')
-os.chdir("c:/Users/kumard1/.spyder")
+os.chdir(".')
+os.chdir(".")
 with open('hopedale.txt', 'r') as input_file
 %clear
 pip install pandas
