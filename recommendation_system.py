@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Jul 20 14:12:07 2019
-
-@author: KumarD1
 """
 
 import math
