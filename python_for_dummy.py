@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Sep 24 16:58:31 2017
-
-@author: KumarD1
 """
 
 for miles in range(10, 70, 10):
